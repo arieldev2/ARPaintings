@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		5BDB0DE92B1E97F200C867D8 /* ARPaintingsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB0DE82B1E97F200C867D8 /* ARPaintingsAppApp.swift */; };
-		5BDB0DEB2B1E97F200C867D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB0DEA2B1E97F200C867D8 /* ContentView.swift */; };
+		5BDB0DEB2B1E97F200C867D8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB0DEA2B1E97F200C867D8 /* MainView.swift */; };
 		5BDB0DED2B1E97F400C867D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDB0DEC2B1E97F400C867D8 /* Assets.xcassets */; };
 		5BDB0DF02B1E97F400C867D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDB0DEF2B1E97F400C867D8 /* Preview Assets.xcassets */; };
+		5BDB0DF82B1E989700C867D8 /* ImagePainting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB0DF72B1E989700C867D8 /* ImagePainting.swift */; };
+		5BDB0DFB2B1E996900C867D8 /* CustomPainting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB0DFA2B1E996900C867D8 /* CustomPainting.swift */; };
+		5BDB0E012B1E9A7F00C867D8 /* ARRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB0E002B1E9A7F00C867D8 /* ARRepresentable.swift */; };
+		5BDB0E042B1E9D4100C867D8 /* PaintingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB0E032B1E9D4100C867D8 /* PaintingViewModel.swift */; };
+		5BDB0E062B1EAE4A00C867D8 /* ARViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB0E052B1EAE4A00C867D8 /* ARViewCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5BDB0DE52B1E97F200C867D8 /* ARPaintingsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPaintingsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDB0DE82B1E97F200C867D8 /* ARPaintingsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPaintingsAppApp.swift; sourceTree = "<group>"; };
-		5BDB0DEA2B1E97F200C867D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BDB0DEA2B1E97F200C867D8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5BDB0DEC2B1E97F400C867D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BDB0DEF2B1E97F400C867D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BDB0DF72B1E989700C867D8 /* ImagePainting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePainting.swift; sourceTree = "<group>"; };
+		5BDB0DFA2B1E996900C867D8 /* CustomPainting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPainting.swift; sourceTree = "<group>"; };
+		5BDB0E002B1E9A7F00C867D8 /* ARRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRepresentable.swift; sourceTree = "<group>"; };
+		5BDB0E032B1E9D4100C867D8 /* PaintingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingViewModel.swift; sourceTree = "<group>"; };
+		5BDB0E052B1EAE4A00C867D8 /* ARViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,11 @@
 		5BDB0DE72B1E97F200C867D8 /* ARPaintingsApp */ = {
 			isa = PBXGroup;
 			children = (
+				5BDB0E022B1E9D1800C867D8 /* ViewModel */,
+				5BDB0DFF2B1E9A6C00C867D8 /* View */,
+				5BDB0DF92B1E98FB00C867D8 /* CustomPainting */,
+				5BDB0DF62B1E987500C867D8 /* Model */,
 				5BDB0DE82B1E97F200C867D8 /* ARPaintingsAppApp.swift */,
-				5BDB0DEA2B1E97F200C867D8 /* ContentView.swift */,
 				5BDB0DEC2B1E97F400C867D8 /* Assets.xcassets */,
 				5BDB0DEE2B1E97F400C867D8 /* Preview Content */,
 			);
@@ -65,6 +78,40 @@
 				5BDB0DEF2B1E97F400C867D8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BDB0DF62B1E987500C867D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB0DF72B1E989700C867D8 /* ImagePainting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BDB0DF92B1E98FB00C867D8 /* CustomPainting */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB0DFA2B1E996900C867D8 /* CustomPainting.swift */,
+			);
+			path = CustomPainting;
+			sourceTree = "<group>";
+		};
+		5BDB0DFF2B1E9A6C00C867D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB0DEA2B1E97F200C867D8 /* MainView.swift */,
+				5BDB0E002B1E9A7F00C867D8 /* ARRepresentable.swift */,
+				5BDB0E052B1EAE4A00C867D8 /* ARViewCustom.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BDB0E022B1E9D1800C867D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB0E032B1E9D4100C867D8 /* PaintingViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BDB0DEB2B1E97F200C867D8 /* ContentView.swift in Sources */,
+				5BDB0DFB2B1E996900C867D8 /* CustomPainting.swift in Sources */,
+				5BDB0E062B1EAE4A00C867D8 /* ARViewCustom.swift in Sources */,
+				5BDB0DF82B1E989700C867D8 /* ImagePainting.swift in Sources */,
+				5BDB0E012B1E9A7F00C867D8 /* ARRepresentable.swift in Sources */,
+				5BDB0E042B1E9D4100C867D8 /* PaintingViewModel.swift in Sources */,
+				5BDB0DEB2B1E97F200C867D8 /* MainView.swift in Sources */,
 				5BDB0DE92B1E97F200C867D8 /* ARPaintingsAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,9 +324,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARPaintingsApp/Preview Content\"";
-				DEVELOPMENT_TEAM = QP85979J3B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera usage";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,9 +354,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARPaintingsApp/Preview Content\"";
-				DEVELOPMENT_TEAM = QP85979J3B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera usage";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

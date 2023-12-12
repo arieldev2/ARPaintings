@@ -11,7 +11,7 @@ import SwiftUI
 struct ARPaintingsAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
